@@ -8,7 +8,7 @@
 
 
 .App-header {
-  height: 70px;
+  min-height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,6 +22,15 @@
   justify-content: space-around;
   align-items: center;
   color: white;
+}
+.responsiveHeader {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.responsive-nav:hover {
+  border-bottom: solid 2px #01C8C8;
 }
 
 .Header-nav {
@@ -80,13 +89,14 @@
 .Hero__content {
   display: flex;
   flex-direction: column;
-  width: max-content;
+  width: 80%;
   margin: auto auto;
   justify-content: space-between;
   align-items: center;
   color: white;
   z-index: 10;
-  height: 10em;
+  height: max-content;
+  text-align: center;
 }
 
 .Hero__content > h3 {
@@ -95,6 +105,7 @@
 
 .Hero__content > h1 {
   font-size: 40px !important;
+  margin: 0.25em 0;
 }
 
 .card-container {
@@ -186,6 +197,7 @@
   margin: 0 .25vw;
   color: #ffffff;
   font-size: 16px;
+  outline: none;
 }
 
 .button-teal:hover{
