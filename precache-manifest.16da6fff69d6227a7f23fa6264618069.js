@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0213924ede6128e01a51e8642aa3f49",
+    "revision": "f66f7f88cdc95240d462bb686f0dc9cc",
     "url": "/finlo/index.html"
   },
   {
-    "revision": "49519748ae7a7a6c32ac",
-    "url": "/finlo/static/css/main.3eaad394.chunk.css"
+    "revision": "dd9948a88bb25c8534c5",
+    "url": "/finlo/static/css/main.3b05352c.chunk.css"
   },
   {
-    "revision": "112b371376b9bae9bcb0",
-    "url": "/finlo/static/js/2.2466caa5.chunk.js"
+    "revision": "c77b2f827e365523e598",
+    "url": "/finlo/static/js/2.dbee302d.chunk.js"
   },
   {
-    "revision": "49519748ae7a7a6c32ac",
-    "url": "/finlo/static/js/main.93ee7819.chunk.js"
+    "revision": "dd9948a88bb25c8534c5",
+    "url": "/finlo/static/js/main.b9ad15e7.chunk.js"
   },
   {
     "revision": "e68815c247e5395f39a4",
@@ -46,5 +46,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f2be9ebd25be0488106436afcb6a14e8",
     "url": "/finlo/static/media/woman-wearing-beaded-white-necklace-1181623.f2be9ebd.jpg"
+  },
+  {
+    "revision": "cd525f955d72abf81118250da5c1c898",
+    "url": "/finlo/static/media/women-walking.cd525f95.png"
   }
 ]);

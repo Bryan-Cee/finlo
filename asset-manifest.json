@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/finlo/static/css/main.3eaad394.chunk.css",
-    "main.js": "/finlo/static/js/main.93ee7819.chunk.js",
-    "main.js.map": "/finlo/static/js/main.93ee7819.chunk.js.map",
+    "main.css": "/finlo/static/css/main.3b05352c.chunk.css",
+    "main.js": "/finlo/static/js/main.b9ad15e7.chunk.js",
+    "main.js.map": "/finlo/static/js/main.b9ad15e7.chunk.js.map",
     "runtime-main.js": "/finlo/static/js/runtime-main.efc714d6.js",
     "runtime-main.js.map": "/finlo/static/js/runtime-main.efc714d6.js.map",
-    "static/js/2.2466caa5.chunk.js": "/finlo/static/js/2.2466caa5.chunk.js",
-    "static/js/2.2466caa5.chunk.js.map": "/finlo/static/js/2.2466caa5.chunk.js.map",
+    "static/js/2.dbee302d.chunk.js": "/finlo/static/js/2.dbee302d.chunk.js",
+    "static/js/2.dbee302d.chunk.js.map": "/finlo/static/js/2.dbee302d.chunk.js.map",
     "index.html": "/finlo/index.html",
-    "precache-manifest.b82a8e5140eaeaf5cbe96eec178c469a.js": "/finlo/precache-manifest.b82a8e5140eaeaf5cbe96eec178c469a.js",
+    "precache-manifest.16da6fff69d6227a7f23fa6264618069.js": "/finlo/precache-manifest.16da6fff69d6227a7f23fa6264618069.js",
     "service-worker.js": "/finlo/service-worker.js",
-    "static/css/main.3eaad394.chunk.css.map": "/finlo/static/css/main.3eaad394.chunk.css.map",
+    "static/css/main.3b05352c.chunk.css.map": "/finlo/static/css/main.3b05352c.chunk.css.map",
     "static/media/Logo-dark.png": "/finlo/static/media/Logo-dark.f9b8d434.png",
     "static/media/Logo.png": "/finlo/static/media/Logo.0e1249e9.png",
     "static/media/App.css": "/finlo/static/media/man-sitting-in-front-of-keyboard-2422278.17405fa0.jpg",
     "static/media/hambuger-icon.svg": "/finlo/static/media/hambuger-icon.86595150.svg",
     "static/media/section-leaves.png": "/finlo/static/media/section-leaves.e5b73a28.png",
-    "static/media/woman-wearing-beaded-white-necklace-1181623.jpg": "/finlo/static/media/woman-wearing-beaded-white-necklace-1181623.f2be9ebd.jpg"
+    "static/media/woman-wearing-beaded-white-necklace-1181623.jpg": "/finlo/static/media/woman-wearing-beaded-white-necklace-1181623.f2be9ebd.jpg",
+    "static/media/women-walking.png": "/finlo/static/media/women-walking.cd525f95.png"
   },
   "entrypoints": [
     "static/js/runtime-main.efc714d6.js",
-    "static/js/2.2466caa5.chunk.js",
-    "static/css/main.3eaad394.chunk.css",
-    "static/js/main.93ee7819.chunk.js"
+    "static/js/2.dbee302d.chunk.js",
+    "static/css/main.3b05352c.chunk.css",
+    "static/js/main.b9ad15e7.chunk.js"
   ]
 }
