@@ -26,6 +26,7 @@ const sectionWoman = require("./img/woman-wearing-beaded-white-necklace-1181623.
 const whiteLogo = require("./img/Logo.png");
 const darkLogo = require("./img/Logo-dark.png");
 const closeIcon = require("./img/hambuger-icon.svg");
+const womenWalking = require("./img/women-walking.png");
 
 class App extends Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class App extends Component {
 
   handleScroll = () => {
     let scrollTop = window.pageYOffset;
-    if (scrollTop > 200) {
+    if (scrollTop > 50) {
       this.nav.current.style.backgroundColor = "#ffffff";
       this.setState({logo: darkLogo, navLinksColor: "#000000"})
     } else {
@@ -99,20 +100,20 @@ class App extends Component {
                 <List link verticalAlign="center">
                   <List.Item as='a' className="responsive-nav" href="#how-it-works" style={{
                     color: this.state.navLinksColor, padding: "1em"
-                  }}>How it works?</List.Item>
+                  }} onClick={this.handleMenuClick}>How it works?</List.Item>
                   <List.Item as='a' className="responsive-nav" href="#why-Finlo" style={{
                     color: this.state.navLinksColor, padding: "1em"
-                  }}>Why Finlo?</List.Item>
+                  }} onClick={this.handleMenuClick}>Why Finlo?</List.Item>
                   <List.Item as='a' className="responsive-nav" href="#need-more-help" style={{
                     color: this.state.navLinksColor, padding: "1em"
-                  }}>Contact</List.Item>
-                  <List.Item>
+                  }} onClick={this.handleMenuClick}>Contact</List.Item>
+                  <List.Item onClick={this.handleMenuClick}>
                     <List.Content>
                       <button style={{color: this.state.navLinksColor}} className="button button-transparent">Log In
                       </button>
                     </List.Content>
                   </List.Item>
-                  <List.Item>
+                  <List.Item onClick={this.handleMenuClick}>
                     <List.Content>
                       <button className="button button-teal">Get Funding</button>
                     </List.Content>
@@ -132,8 +133,8 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <Container id="how-it-works">
-          <div className="card-container">
+        <Container>
+          <div id="how-it-works" className="card-container">
             <div>
               <h2 style={{
                 marginTop: "1em",
@@ -215,7 +216,8 @@ class App extends Component {
         <Responsive minWidth={768}>
           <div id="why-Finlo" style={{
             minHeight: "100vh",
-            backgroundColor: "#efefef"
+            backgroundColor: "#efefef",
+            margin: "0 auto"
           }}>
             <Container>
               <div className="card-container">
@@ -227,13 +229,13 @@ class App extends Component {
                 </div>
                 <Grid stretched stackable className="unique-bg">
                   <Grid.Row>
-                    <GridColumn stretched width={8}>
-                      <div>
+                    <GridColumn width={1}/>
+                    <GridColumn stretched width={7}>
                         <img src={sectionLeaves} alt="section-leaves"/>
                         <img src={sectionWoman} alt="woman" className="section-woman"/>
-                      </div>
+                        {/*<img src={womenWalking} alt="woman-walking" className="section-woman"/>*/}
                     </GridColumn>
-                    <GridColumn stretched width={6}>
+                    <GridColumn stretched width={7}>
                       <CardGroup centered stackable doubling itemsPerRow={1}>
                         <Card raised style={{
                           borderRadius: "1em",
@@ -278,7 +280,6 @@ class App extends Component {
                       </CardGroup>
                     </GridColumn>
                   </Grid.Row>
-                  <GridColumn width={2}/>
                 </Grid>
               </div>
             </Container>
@@ -361,28 +362,19 @@ class App extends Component {
             </Container>
           </div>
         </Responsive>
+        <div style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}>
+
+        </div>
         <Segment id="need-more-help" inverted vertical style={{padding: '5em 0em'}}>
           <Container>
             <Grid divided inverted stackable>
               <Grid.Row>
-                <Grid.Column width={5}>
-                  <Grid>
-                    <Grid.Column width={7}>
-                      <Image src={whiteLogo} className="dark-logo"/>
-                    </Grid.Column>
-                    <Grid.Column stretched width={7}>
-                      <div style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        justifyContent: "space-evenly"
-                      }}>
-                        <Icon size="large" name="map marker alternate"/>
-                        <div>Nairobi, Kenya</div>
-                        <div>Paris, France</div>
-                      </div>
-                    </Grid.Column>
-                  </Grid>
+                <Grid.Column width={3}>
+                  <Image src={whiteLogo} className="dark-logo"/>
                 </Grid.Column>
                 <Grid.Column width={5}>
                   <Header as='h3' inverted>
@@ -395,25 +387,26 @@ class App extends Component {
                     Our team is dedicated to serving you
                   </Header>
                 </Grid.Column>
-                <Grid.Column width={5}>
+                <Grid.Column width={7}>
                   <Header as='h2' inverted>
                     Stay in Touch
                   </Header>
                   <div style={{
                     marginTop: "2em"
                   }}>
-                    <Icon link size="huge" name="linkedin"/>
-                    <Icon link size="huge" name="twitter"/>
+                    <Icon link size="big" name="linkedin"/>
+                    <Icon link size="big" name="twitter"/>
+                    <Icon link size="big" name="whatsapp"/>
+                    <Icon link size="big" name="facebook"/>
                     <a href="mailto:Info@finlo.ai" style={{color: "#fff"}}>
-                      <Icon link size="huge" name="mail outline"/>
+                      <Icon link size="big" name="mail outline"/>
                     </a>
                   </div>
                 </Grid.Column>
               </Grid.Row>
               <Grid.Row centered>
                 <Header as="h5" inverted>
-                  © Finlo 2019 | Designed by <a rel="noopener noreferrer" target="_blank"
-                                                href="https://briancheruiyot.web.app">Brian Cheruiyot</a>
+                  © Finlo 2019
                 </Header>
               </Grid.Row>
             </Grid>
